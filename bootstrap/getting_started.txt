@@ -1,0 +1,16 @@
+
+Getting started with OSHChip Vagrant evironment.
+
+Use `vagrant ssh` to enter the build evironment.
+The directory `/vagrant` is mirror from your current directory.
+
+This allows you to use your normal editor for work, then build from
+within the VirtualBox VM.
+
+
+After running `vagrant ssh` you can compile the example project.
+
+cd /vagrant/devel/OSHChip_Blinky_Demo
+make
+make flash
+
