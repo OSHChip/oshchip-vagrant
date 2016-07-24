@@ -10,7 +10,7 @@ sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 
 sudo apt-get update
-sudo apt-get install -y build-essential gcc-arm-none-eabi gdb-arm-none-eabi git libusb-1.0-0-dev unzip python python-pip
+sudo apt-get install -y build-essential gcc-arm-none-eabi gdb-arm-none-eabi git libusb-1.0-0-dev unzip python python-pip screen
 
 sudo pip install --pre -U git+https://github.com/mbedmicro/pyOCD.git#egg=pyOCD
 pip completion --bash >> ~/.bashrc
