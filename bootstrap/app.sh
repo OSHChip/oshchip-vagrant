@@ -15,7 +15,10 @@ sudo apt-get install -y build-essential gcc-arm-none-eabi gdb-arm-none-eabi git 
 sudo pip install --pre -U git+https://github.com/mbedmicro/pyOCD.git#egg=pyOCD
 pip completion --bash >> ~/.bashrc
 
-cd /vagrant
+cp /vagrant/bootstrap/oshchip.rules /etc/udev/rules.d/
+service udev restart
+udevadm trigger
+
 mkdir -p devel/nRF5_SDK_11
 cd devel/nRF5_SDK_11
 
