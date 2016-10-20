@@ -6,6 +6,8 @@ cat bootstrap/banner.txt
 
 sudo sh -c 'echo "cdc-acm" >> /etc/modules'
 
+sudo addgroup vagrant root #only way to ensure pyocd will work :(
+
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 
