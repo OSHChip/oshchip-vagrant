@@ -27,6 +27,8 @@ cd devel/nRF5_SDK_11
 wget https://www.nordicsemi.com/eng/nordic/download_resource/54291/47/32364139 -O nRF5_SDK_11.0.0.zip
 unzip -o nRF5_SDK_11.0.0.zip
 
+sed -e 's/.local.*//' -i components/toolchain/gcc/Makefile.posix # change toolpath for all Makefiles
+
 cd ..
 git clone https://github.com/morganrallen/OSHChip_Blinky_Demo.git
 
