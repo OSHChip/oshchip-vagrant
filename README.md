@@ -1,5 +1,5 @@
 # OSHChip Vagrant
-`vagrant up` and go! Follow the instructions at the end, you should be able to 
+`vagrant up` and go! Follow the instructions at the end, you should be able to
 simply `vagrant ssh` in and build, flash and debug the project.
 
 ```
@@ -10,13 +10,16 @@ make
 make flash
 ```
 
+# Boot error
+
 # Debug
-You can either use `vagrant ssh` twice and get two terminals or use `screen`
+
+You can either use `vagrant ssh` twice and get two terminals or use `screen`.
+I prefer `screen` and will demonstrate that here.
 
 ```
 screen
-[CTRL-a c] # create new buffer
 make startdebug
-[CTRL-a n] # switch to next buffer
+[CTRL-a c] # create new buffer
 make gdb
 ```
