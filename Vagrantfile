@@ -28,12 +28,12 @@ Vagrant.configure(2) do |config|
   # config.vm.synced_folder "../data", "/vagrant_data"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--hwvirtex", "on"]     
+    vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
     vb.customize ["modifyvm", :id, "--usb", "on"]
     vb.customize ["modifyvm", :id, "--usbehci", "on"]
 		vb.customize [
-      "usbfilter", "add", "0", 
-			"--target", :id, 
+      "usbfilter", "add", "0",
+			"--target", :id,
 			"--name", "OSHChip Programmer",
       "--vendorid", "0x0d28",
       "--productid", "0x0204"
