@@ -3,6 +3,7 @@
 simply `vagrant ssh` in and build, flash and debug the project.
 
 ```
+git clone https://github.com/morganrallen/oshchip-vagrant.git
 vagrant up
 vagrant ssh
 cd /vagrant/devel/OSHChip_Blinky_Demo/
