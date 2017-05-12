@@ -2,8 +2,15 @@
 `vagrant up` and go! Follow the instructions at the end, you should be able to
 simply `vagrant ssh` in and build, flash and debug the project.
 
+# Requirements
+Ensure you have installed
+* vagrant
+* Virtual Box
+* Oracle Virtual Box Extensions
+
 ```
 git clone https://github.com/morganrallen/oshchip-vagrant.git
+cd oshchip-vagrant/
 vagrant up
 vagrant ssh
 cd /vagrant/devel/OSHChip_Blinky_Demo/
