@@ -24,7 +24,7 @@ udevadm trigger
 mkdir -p devel/nRF5_SDK_11
 cd devel/nRF5_SDK_11
 
-wget https://www.nordicsemi.com/eng/nordic/download_resource/54291/47/32364139 -O nRF5_SDK_11.0.0.zip
+wget https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v11.x.x/nRF5_SDK_11.0.0_89a8197.zip -O nRF5_SDK_11.0.0.zip
 unzip -o nRF5_SDK_11.0.0.zip
 
 sed -e 's/.local.*//' -i components/toolchain/gcc/Makefile.posix # change toolpath for all Makefiles
