@@ -8,9 +8,9 @@ preloaded with all the tools required to build flash and debug `OSHChip`
 
 # Requirements
 Ensure you have installed
-* vagrant
-* Virtual Box
-* Oracle Virtual Box Extensions
+* [Vagrant][vagrant]
+* [Virtual Box][virtualbox]
+* [Oracle Virtual Box Extensions][ovbe]
 
 ```
 git clone https://github.com/morganrallen/oshchip-vagrant.git
@@ -39,4 +39,6 @@ make gdb
 # Notes
 * vagrant cannot handle usernames with a " " in Windows. (yeah, really)
 
-
+[vagrant]: https://www.vagrantup.com/ "Vagrant"
+[virtualbox]: https://www.virtualbox.org/ "Virtual Box"
+[ovbe]: http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html "Oracle Virtual Box Extensions"
