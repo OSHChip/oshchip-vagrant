@@ -2,6 +2,10 @@
 `vagrant up` and go! Follow the instructions at the end, you should be able to
 simply `vagrant ssh` in and build, flash and debug the project.
 
+# Intro
+`vagrant` utilized `Virtual Box` to provide a consistent developement environment,
+preloaded with all the tools required to build flash and debug `OSHChip`
+
 # Requirements
 Ensure you have installed
 * vagrant
@@ -31,3 +35,8 @@ make startdebug
 [CTRL-a c] # create new buffer
 make gdb
 ```
+
+# Notes
+* vagrant cannot handle usernames with a " " in Windows. (yeah, really)
+
+
