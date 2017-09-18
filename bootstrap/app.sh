@@ -21,11 +21,10 @@ cp /vagrant/bootstrap/oshchip.rules /etc/udev/rules.d/
 service udev restart
 udevadm trigger
 
-mkdir -p devel/nRF5_SDK_11
-cd devel/nRF5_SDK_11
+mkdir -p devel
 
 wget https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v12.x.x/nRF5_SDK_12.3.0_d7731ad.zip
-#unzip -o nRF5_SDK_12*.zip
+unzip -o nRF5_SDK_12*.zip
 
 sed -e 's/.local.*//' -i components/toolchain/gcc/Makefile.posix # change toolpath for all Makefiles
 
