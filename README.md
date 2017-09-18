@@ -22,8 +22,6 @@ make
 make flash
 ```
 
-# Boot error
-
 # Debug
 
 You can either use `vagrant ssh` twice and get two terminals or use `screen`.
@@ -36,8 +34,9 @@ make startdebug
 make gdb
 ```
 
-# Notes
+# Windows Notes
 * vagrant cannot handle usernames with a " " in Windows. (yeah, really)
+* if `vagrant up` hangs update to `Windows Management System 3.0`
 
 [vagrant]: https://www.vagrantup.com/ "Vagrant"
 [virtualbox]: https://www.virtualbox.org/ "Virtual Box"
