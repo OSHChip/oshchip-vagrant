@@ -35,7 +35,7 @@ make gdb
 ```
 
 # Windows Notes
-* vagrant cannot handle usernames with a " " in Windows. (yeah, really)
+* vagrant cannot handle usernames with a " " (space) in Windows. (yeah, really)
 * if `vagrant up` hangs update to `Windows Management System 3.0`
 
 [vagrant]: https://www.vagrantup.com/ "Vagrant"
