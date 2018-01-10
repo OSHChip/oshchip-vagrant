@@ -1,1 +1,1 @@
-NRF_SDK_PATH=/vagrant/devel/nRF5_SDK_12.3.0_d7731ad/
+export NRF_SDK_PATH=/vagrant/devel/nRF5_SDK_12.3.0_d7731ad/
