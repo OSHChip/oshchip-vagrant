@@ -17,9 +17,9 @@ sudo apt-get install -y build-essential gcc-arm-none-eabi gdb-arm-none-eabi git 
 sudo pip install --pre -U git+https://github.com/mbedmicro/pyOCD.git#egg=pyOCD
 pip completion --bash >> ~/.bashrc
 
-cp /vagrant/bootstrap/oshchip.rules /etc/udev/rules.d/
-service udev restart
-udevadm trigger
+sudo cp /vagrant/bootstrap/oshchip.rules /etc/udev/rules.d/
+sudo service udev restart
+sudo udevadm trigger
 
 mkdir -p devel
 cd devel
